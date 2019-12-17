@@ -9,7 +9,7 @@ a {
 }
 
 .nav-bar {
-    padding-left: 60px; 
+    padding-left: 60px;
     padding-right: 60px;
     display: fixed;
     border-bottom: 1px solid lightslategray;
@@ -35,7 +35,7 @@ nav li {
 }
 
 nav a:hover {
-    color: peru;
+    color: rgb(103, 39, 146);
 }
 
 body {
@@ -48,33 +48,38 @@ header {
     flex-direction: column;
     align-items: center;
     margin-top: 60px;
- 
-}
-
-header>h1 {
-    margin-bottom: 5px;
-    color: peru;
-}
-
-header>p {
-    margin-top: 5px;
-    width: 55%;
 }
 
 main {
-    margin: auto;
-    text-align: left;
-    width: 55%;
+    flex-direction: column;
 }
 
 .main-pic {
+    margin-top: 50px;
     border: 1px solid black;
     height: 200px;
     width: 175px;
     border-radius: 3px;
-    margin-top: 80px;
 }
 
-.contact-link {
-    color: peru;
+.cat-pic {
+    margin-right: 30px;
+    margin-bottom: 30px; 
+    border: 1px solid black;
+    border-radius: 2px;
+    height: 300px;
+    width: 400px;
+    float: left;
+}
+
+.intro {
+    margin: auto;
+    text-align: left;
+    width: 75%;
+}
+
+.fur-babes p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 75%;
 }
