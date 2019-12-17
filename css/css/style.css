@@ -53,17 +53,23 @@ header {
 
 header>h1 {
     margin-bottom: 5px;
+    margin-top: 10px;
     color: peru;
+    font-size: 45px;
+    font-weight: 2;
+    text-shadow: 1px 1px 1px black ;
 }
 
 header>p {
     margin-top: 5px;
-    width: 55%;
+    width: 50%;
+    font-size: 15px;
 }
 
 main {
     margin: auto;
     text-align: left;
+    line-height: 22px;
     width: 55%;
 }
 
@@ -73,8 +79,20 @@ main {
     width: 175px;
     border-radius: 3px;
     margin-top: 80px;
+    margin-bottom: 50px;
 }
 
 .contact-link {
     color: peru;
+}
+
+.contact-link:hover {
+    color: powderblue;
+}
+
+.contact {
+    background-color: powderblue;
+    border: 1px;
+    border-radius: 3px;
+    padding: 8px;
 }

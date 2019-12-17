@@ -3,18 +3,25 @@ body * {
     font-family: "Roboto", sans-serif;
 }
 
+body {
+    display: flex;
+    background-color: white;
+    color: black;
+}
+
 a {
     text-decoration: none;
     color: rgb(5, 5, 5);
 }
 
 .nav-bar {
-    padding-left: 60px;
+    padding-left: 60px; 
     padding-right: 60px;
     display: fixed;
     border-bottom: 1px solid lightslategray;
     top: 0;
     left: 0;
+    align-items: center;
 }
 
 nav {
@@ -35,51 +42,57 @@ nav li {
 }
 
 nav a:hover {
-    color: rgb(103, 39, 146);
+    color: peru;
 }
 
-body {
-    background-color: white;
-    color: black;
-}
-
-header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 60px;
+.contact {
+    background-color: powderblue;
+    border: 1px;
+    border-radius: 3px;
+    padding: 8px;
 }
 
 main {
-    flex-direction: column;
+   display: flex;
+   flex-flow: row wrap;
+   height: 800px;
+   width: 75%;
+   margin: auto;
+}
+
+main>h2 {
+    margin-top: 80px;
+}
+
+.intro {
+    padding-top: 80px;
+    margin: auto;
+    width: 75%;
+}
+
+.fur-babes {
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 75%;
 }
 
 .main-pic {
-    margin-top: 50px;
     border: 1px solid black;
     height: 200px;
     width: 175px;
     border-radius: 3px;
-}
-
-.cat-pic {
-    margin-right: 30px;
-    margin-bottom: 30px; 
-    border: 1px solid black;
-    border-radius: 2px;
-    height: 300px;
-    width: 400px;
+    margin:  20px 20px 20px 0px;
     float: left;
 }
 
-.intro {
-    margin: auto;
-    text-align: left;
-    width: 75%;
-}
-
-.fur-babes p {
+.cat-pic {
+    border: 1px solid black;
+    border-radius: 3px;
+    height: 200px;
+    width: 300px;
     margin-top: 20px;
+    margin-right: 20px;
     margin-bottom: 20px;
-    width: 75%;
+    float: left;
 }
