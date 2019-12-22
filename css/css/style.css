@@ -35,7 +35,7 @@ nav li {
 }
 
 nav a:hover {
-    color: darkslategray;
+    color: palevioletred;
 }
 
 body {
@@ -74,7 +74,7 @@ main {
 }
 
 .main-pic {
-    border: 1px solid black;
+    border: 1px solid darkslategray;
     height: 200px;
     width: 175px;
     border-radius: 150%;
@@ -95,4 +95,8 @@ main {
     border: 1px;
     border-radius: 3px;
     padding: 8px;
+}
+
+.contact:hover {
+    color: darkslategray;
 }
