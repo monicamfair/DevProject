@@ -66,6 +66,7 @@ main {
 
 main>h2 {
     margin-top: 80px;
+    color: palevioletred;
 }
 
 .intro {
@@ -97,4 +98,8 @@ main>h2 {
     width: 400px;
     margin: 5px 20px 50px 0px;
     float: left;
+}
+
+h2, h3 {
+    color: palevioletred;
 }
