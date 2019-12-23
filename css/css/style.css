@@ -8,19 +8,15 @@ a {
     color: white;
 }
 
-.nav-bar {
-    padding-left: 60px; 
-    padding-right: 60px;
-    display: fixed;
-    border-bottom: 1px solid lightslategray;
-    top: 0;
-    left: 0;
-}
-
 nav {
     height: 60px;
+    padding-left: 60px; 
+    padding-right: 60px;
+    border-bottom: 1px solid lightslategray;
     background-color: darkolivegreen;
-    position: fixed;
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
 }
 
