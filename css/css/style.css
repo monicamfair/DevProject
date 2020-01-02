@@ -5,10 +5,33 @@ body * {
 .item1 {
     grid-area: nav;
     border-bottom: 1px solid lightslategray;
-    background-color: darkolivegreen;}
-.item2 {grid-area: header;}
-.item3 {grid-area: main;}
-.item4 {grid-area: footer;}
+    background-color: darkolivegreen;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+}
+.item2 {
+    grid-area: header;
+    text-align: center;
+    width: minmax(100px, 500px);
+}
+.item3 {
+    grid-area: main;
+    text-align: left;
+    grid-column-start: 2;
+    grid-column-end: 6;
+}
+.item4 {
+    grid-area: footer;
+    display: flex;
+    background-color:darkolivegreen;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: white;
+}
 
 .body-container {
     display: grid;
@@ -23,60 +46,19 @@ body * {
     grid-auto-rows: minmax(100px, auto);
 }
 
-/*
-.li1 {grid-area: home;}
-.li2 {grid-area: about;}
-.li3 {grid-area: blog;}
-.li4 {grid-area: contact;}
-
-
-.ul-container {
-    display: grid;
-    grid-gap: 10px;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-areas: 
-    'home about blog contact';
-}
-*/
-
-
-
-
-
-
-
-/* to separate my grid experiment from the rest of the set styling*/
-
 a {
     text-decoration: none;
     color: white;
 }
 
-.nav-bar {
-    border-bottom: 1px solid lightslategray;
-    background-color: darkolivegreen;
-}
-
-nav ul {
-    list-style: none;
-}
-
-nav {
-   position: fixed;
-   top: 0;
-   left: 0;
-   width: 100%;
-   height: auto;
-}
-
 ul {
     display: flex;
     justify-content: space-around;
-    
 }
 
 li {
     padding: 10px;
+    list-style: none;
 }
 
 .li4 {
@@ -132,31 +114,4 @@ main {
     background-color: palevioletred;
     border: 1px;
     border-radius: 3px;
-
-}
-
-.contact:hover {
-    color: darkslategray;
-}
-
-
-.item2 {
-    text-align: center;
-}
-
-.item3 {
-    text-align: left;
-    grid-column-start: 2;
-    grid-column-end: 6;
-}
-
-.item4 {
-    background-color:darkolivegreen;
-    width: 100%;
-    text-align: center;
-    height: auto;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    color: white;
 }
