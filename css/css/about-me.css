@@ -113,6 +113,7 @@ main>h2 {
     border-radius: 3px;
     margin:  0px 20px 10px 0px;
     float: left;
+    order: 0;
 }
 
 .cat-pic {
@@ -122,6 +123,7 @@ main>h2 {
     width: auto;
     margin: 5px 20px 10px 0px;
     float: left;
+    order: 0;
 }
 
 h2, h3 {

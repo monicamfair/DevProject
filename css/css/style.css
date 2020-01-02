@@ -101,6 +101,7 @@ main {
     height: 200px;
     width: 175px;
     border-radius: 150%;
+    order: 0;
 }
 
 .contact-link {
