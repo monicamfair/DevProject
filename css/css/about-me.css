@@ -133,6 +133,10 @@ h2, h3 {
 
 @media screen and (max-width: 450px) {
 
+    .item1 {
+        position: absolute;
+    }
+
     ul {
         justify-content: space-evenly;
         padding: 3px;

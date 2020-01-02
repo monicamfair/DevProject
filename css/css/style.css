@@ -126,6 +126,10 @@ main {
         text-align: center;
     }
 
+    .item1 {
+        position: absolute;
+    }
+
     .li4 {
         background-color: darkolivegreen;
     }
