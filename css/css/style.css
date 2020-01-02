@@ -115,3 +115,33 @@ main {
     border: 1px;
     border-radius: 3px;
 }
+
+@media screen and (max-width: 450px) {
+
+    ul {
+        justify-content: space-evenly;
+        padding: 3px;
+        text-align: center;
+    }
+
+    .li4 {
+        background-color: darkolivegreen;
+    }
+}
+
+@media screen and (min-width: 450px) {
+
+    .item2, .item3 {
+        max-width: 500px;
+        justify-self: center;
+        text-align: center;
+    }
+
+    ul {
+        justify-content: flex-start;
+    }
+
+    li {
+        margin-right: 20px;
+    }
+}

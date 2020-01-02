@@ -107,7 +107,7 @@ main>h2 {
 .main-pic {
     border: 1px solid darkslategray;
     height: 200px;
-    width: 175px;
+    width: auto;
     border-radius: 3px;
     margin:  0px 20px 10px 0px;
     float: left;
@@ -117,11 +117,57 @@ main>h2 {
     border: 1px solid darkslategray;
     border-radius: 3px;
     height: 300px;
-    width: 400px;
+    width: auto;
     margin: 5px 20px 10px 0px;
     float: left;
 }
 
 h2, h3 {
     color: palevioletred;
+}
+
+
+@media screen and (max-width: 450px) {
+
+    ul {
+        justify-content: space-evenly;
+        padding: 3px;
+        text-align: center;
+    }
+
+    .li4 {
+        background-color: darkolivegreen;
+    }
+
+    .item2 {
+        max-width: 450px;
+    }
+
+    .cat-pic, .main-pic {
+        height: auto;
+        width: 150px;
+    }
+
+    .item3 {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 450px) and (max-width: 780px) {
+
+    .item2 {
+        max-width: 450px;
+        justify-self: flex-start;
+        text-align: left;
+    }
+
+    ul {
+        justify-content: flex-start;
+    }
+
+    li {
+        margin-right: 20px;
+    }
+
+    
 }
