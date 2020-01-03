@@ -1,96 +1,173 @@
 body * {
-    box-sizing: border-box;
     font-family: "Roboto", sans-serif;
 }
 
-body {
+.item1 {
+    grid-area: nav;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid lightslategray;
+    background-color: darkolivegreen;}
+.item2 {
+    grid-area: main;
+    line-height: 22px;
+    text-align: left;
+    width: minmax(100px, 500px);
+    grid-column-start: 2;
+    grid-column-end: 6;
+}
+.item3 {
+    grid-area: footer;
     display: flex;
-    background-color: white;
-    color: black;
+    background-color:darkolivegreen;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: white;
+}
+
+.body-container {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-areas: 
+    'nav nav nav nav nav nav'
+    'main main main main main main'
+    'main main main main main main'
+    'footer footer footer footer footer footer';
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: minmax(100px, auto);
 }
 
 a {
     text-decoration: none;
-    color: rgb(5, 5, 5);
+    color: white;
 }
 
-.nav-bar {
-    padding-left: 60px; 
-    padding-right: 60px;
-    display: fixed;
-    border-bottom: 1px solid lightslategray;
-    top: 0;
-    left: 0;
-    align-items: center;
+ul {
+    display: flex;
+    justify-content: space-around;
+
 }
 
-nav {
-    height: 60px;
-    background-color: rgb(248, 247, 247);
-    position: fixed;
-    width: 100%;
-}
-
-nav ul {
-    display:inline-block;
+li {
+    padding: 10px;
     list-style: none;
 }
 
-nav li {
-    display: inline-block;
-    margin-right: 30px;
-}
-
-nav a:hover {
-    color: peru;
-}
-
-.contact {
-    background-color: powderblue;
-    border: 1px;
+.li4 {
+    background-color: palevioletred;
     border-radius: 3px;
-    padding: 8px;
+    border: 1px;
 }
 
-main {
-   display: flex;
-   flex-flow: row wrap;
-   height: 800px;
-   width: 75%;
-   margin: auto;
+.item1 a:hover {
+    color: palevioletred;
+}
+
+.li4 a:hover {
+    color: darkslategray;
+}
+
+body {
+    background-color: rgb(246, 248, 247);
+    color: darkslategray;
+}
+
+.main-pic {
+    border: 1px solid darkslategray;
+    height: 200px;
+    width: 175px;
+    border-radius: 150%;
+}
+
+.item1 > * {
+    padding: 10px;
 }
 
 main>h2 {
     margin-top: 80px;
+    color: palevioletred;
 }
 
 .intro {
-    padding-top: 80px;
     margin: auto;
     width: 75%;
 }
 
 .fur-babes {
     margin: auto;
-    padding-top: 50px;
+    padding-top: 30px;
     padding-bottom: 50px;
     width: 75%;
 }
 
 .main-pic {
-    border: 1px solid black;
+    border: 1px solid darkslategray;
     height: 200px;
-    width: 175px;
+    width: auto;
     border-radius: 3px;
-    margin:  0px 20px 20px 0px;
+    margin:  0px 20px 10px 0px;
     float: left;
 }
 
 .cat-pic {
-    border: 1px solid black;
+    border: 1px solid darkslategray;
     border-radius: 3px;
     height: 300px;
-    width: 400px;
-    margin: 5px 20px 50px 0px;
+    width: auto;
+    margin: 5px 20px 10px 0px;
     float: left;
+}
+
+h2, h3 {
+    color: palevioletred;
+}
+
+
+@media screen and (max-width: 450px) {
+
+    ul {
+        justify-content: space-evenly;
+        padding: 3px;
+        text-align: center;
+    }
+
+    .li4 {
+        background-color: darkolivegreen;
+    }
+
+    .item2 {
+        max-width: 450px;
+    }
+
+    .cat-pic, .main-pic {
+        height: auto;
+        width: 150px;
+    }
+
+    .item3 {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 450px) and (max-width: 780px) {
+
+    .item2 {
+        max-width: 450px;
+        justify-self: flex-start;
+        text-align: left;
+    }
+
+    ul {
+        justify-content: flex-start;
+    }
+
+    li {
+        margin-right: 20px;
+    }
+
+    
 }
