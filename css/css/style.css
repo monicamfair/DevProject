@@ -5,7 +5,7 @@ body * {
 .item1 {
     grid-area: nav;
     border-bottom: 1px solid lightslategray;
-    background-color: darkolivegreen;
+    background-color: teal;
     position: fixed;
     top: 0;
     left: 0;
@@ -27,7 +27,7 @@ body * {
 .item4 {
     grid-area: footer;
     display: flex;
-    background-color:darkolivegreen;
+    background-color:teal;
     justify-content: center;
     align-items: center;
     position: relative;
@@ -54,7 +54,7 @@ a {
 
 ul {
     display: flex;
-    justify-content: space-around;
+    justify-items: space-evenly;
 }
 
 li {
@@ -63,8 +63,13 @@ li {
 }
 
 .li4 {
-    background-color: palevioletred;
+    background-color: orange;
     border-radius: 3px;
+    
+}
+
+.li4 a {
+    color: black;
 }
 
 .li4 a:hover {
@@ -72,20 +77,21 @@ li {
 }
 
 nav a:hover {
-    color: palevioletred;
+    color: black;
 }
 
+
 body {
-    background-color: rgb(246, 248, 247);
+    background-color: lightyellow;
     color: darkslategray;
 }
 
 
 header>h1 {
-    color: palevioletred;
     font-size: 45px;
     font-weight: 2;
-    text-shadow: 1px 1px 1px black ;
+    /*! text-shadow: 1px 1px 1px black ; */
+    color: teal;
 }
 
 header>p {
@@ -104,7 +110,7 @@ main {
 }
 
 .contact-link {
-    color: palevioletred;
+    color: teal;
 }
 
 .contact-link:hover {
@@ -112,8 +118,8 @@ main {
 }
 
 .contact {
-    background-color: palevioletred;
-    border: 1px;
+    background-color: orange;
+    
     border-radius: 3px;
 }
 
@@ -126,7 +132,16 @@ main {
     }
 
     .li4 {
-        background-color: darkolivegreen;
+        background-color: teal;
+    }
+
+    .li4 a {
+        color: white;
+    }
+
+    img {
+        display: block;
+        float: none;
     }
 }
 
@@ -138,8 +153,12 @@ main {
         text-align: center;
     }
 
+    .item1 {
+        text-align: center;
+    }
+
     ul {
-        justify-content: flex-start;
+        justify-content: space-evenly;
     }
 
     li {
